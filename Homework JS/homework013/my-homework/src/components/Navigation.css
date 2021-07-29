@@ -1,0 +1,34 @@
+.navigation {
+    display: flex;
+    margin: 35px auto;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+    width: 70%;
+}
+
+.nav-item {
+    width: 20%;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #16a085;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+    .navigation{
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:415px) {
+    .navigation{
+      justify-content: space-around;
+    }
+    .nav-item{
+      width: auto;
+    }
+  }

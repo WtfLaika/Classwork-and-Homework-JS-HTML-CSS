@@ -1,0 +1,203 @@
+:root{
+    font-size: 18px;
+}
+
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color:#6f6b66;
+}
+.header {
+    text-align: center;
+    padding-top: 2.78rem;
+    background-image: url('../img/Layer\ 20\ copy\ 2@1X.png');
+    padding-bottom: 6.78rem ;
+}
+
+.header__title{
+    font-size: 1.22rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.94rem;
+    color:black;
+}
+.header__subtitle{
+font-size: 0.94rem;
+font-family: 'Lato', sans-serif;
+padding-bottom: 2.89rem;
+}
+
+
+.header__dash{
+    margin-bottom: 3.17rem ;
+}
+.header__content1, .header__content2 {
+display: flex;
+Justify-content:center;
+margin: 0 11.94rem;
+}
+
+.header__content1__foto, .header__content2__foto{
+    display: flex;
+    Justify-content:center;
+    flex-basis: 50%;
+}
+
+.header__content1__foto{
+    margin-bottom: 1.22rem;
+}
+
+.header__content1__foto-item, .header__content2__foto-item{
+    padding-right: 1.67rem;
+    
+}
+
+.header__content1__foto-item, .header__content2__foto-item{
+    position: relative;
+}
+
+.header__content1__foto-item > div, .header__content2__foto-item > div {
+    position:absolute;
+    top:5rem;
+    left: 1rem;
+    text-align: left;
+    padding-left: 0.78rem;
+    padding-top: 0.89rem;
+    padding-bottom: 0.78rem;
+    background-color: #333333;
+    width: 32%;
+    color: white;
+    font-size: 0.78rem;
+}
+.header__content1__information{
+flex-basis: 50%;
+position: relative;
+}
+
+.header__content1__information-title{
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:black;
+}
+
+.header__content1__information-title > span{
+    color:#f4bc48;
+}
+
+.header__content1__information-text, .header__content2__information-text{
+    text-align: justify;
+    font-size: 0.78rem;
+    line-height: 150%;
+    
+}
+.header__content1__information-text {
+    padding-top: 0.67rem;
+
+}
+
+.header__content2__information{
+    display: flex;
+    flex-direction: column;
+}
+.header__content2__information-buttom {
+    margin-top: 1.7rem;
+    align-self: flex-start;
+}
+.header__content2__information-buttom  a {
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    padding: 1.11rem 1.5rem;
+    background-color: #f1ad1d;
+    font-weight: bold;
+
+}
+
+
+
+
+
+.sub__header{
+    background-image: url('../img/background_black.png');
+    padding-top: 8.33rem;
+    padding-bottom: 8.33rem;
+    background-size: cover;
+    
+}
+
+.sub__header__content{
+    margin: 0 auto;
+    max-width: 30%;
+    color:white;
+    text-align: center;
+}
+
+.sub__header__content-item:first-child{
+    font-size: 1.22rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 3.39rem;
+}
+.sub__header__content-item > span {
+    color:#f1ad1d;
+}
+
+.foot {
+    padding-top: 6.39rem;
+    padding-bottom:6.39rem;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('../img/Layer\ 20\ copy\ 2@1X.png');
+}
+.foot__title{
+    color:black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.22rem;
+    padding-bottom: 1.94rem;
+}
+
+.foot__subtitle{
+    font-size: 0.94rem;
+    padding-bottom: 2.89rem;
+}
+
+.foot__item{
+    padding-bottom: 2.94rem;
+}
+
+.foot__column1 , .foot__column2  {
+    margin: 0 auto;
+    display: flex;
+    Justify-content:center;
+    width: 85.1%;
+}
+
+.foot__column1__foto, .foot__column2__foto{
+position: relative;
+padding-right: 0.2rem;
+}
+
+.foot__column1__foto-name, .foot__column2__foto-name{
+    position: absolute;
+    text-align: left;
+    padding-left: 0.78rem;
+    padding-top: 0.89rem;
+    padding-bottom: 0.78rem;
+    background-color: #333333;
+    padding-right: 2.89rem;
+    color: white;
+    font-size: 0.78rem;
+    top: 6.55rem;
+    left:0.833rem;
+}
+
+.foot__column1__foto-name > span, .foot__column2__foto-name > span {
+    color:#f1ad1d;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container_title">Конструктор пиццы</div>
+        <div class="user_pizza_container">
+            <div id='pizza_constructor' dragover="true" dragover='true'></div>
+        </div>
+    </main>
+    <main>
+        <div class="container_title">Ингредиенты</div>
+        <div class="container_ingredients">
+
+            <div class="title_categories">Размер пиццы</div>
+            <div class="size categories">
+
+                <div class='item'>
+                    <img src="./img/pizzasize.png" alt="" id="size_big">
+                    <div class="title">Большая пицца</div>
+
+                </div>
+                <div id="size_small" class='item'>
+                    <img src="./img/pizzasize.png" alt="small" id='small'>
+                    <div class="title">Маленькая пицца</div>
+
+                </div>
+            </div>
+            <div class="title_categories">Ингредиенты</div>
+            <div class="stuffing categories">
+
+                <div class='item'>
+                    <img src="./img/chedder.jpg" alt="" id="chedder">
+                    <div class="title">Чеддер</div>
+
+                </div>
+                <div class='item'>
+                    <img src="./img/mozarella.png" alt="" id='mozarella'>
+                    <div class="title">Моцарелла</div>
+
+                </div>
+                <div class='item'>
+                    <img src="./img/chicken.jpg" alt="" id="chicken">
+                    <div class="title">Курица</div>
+                </div>
+                <div class='item'>
+                    <img src="./img/bacon.jpg" alt="" id="bacon">
+                    <div class="title">Бекон</div>
+
+                </div>
+                <div class='item'>
+                    <img src="./img/corn.jpeg" alt="" id="corn">
+                    <div class="title">Кукурудза</div>
+
+                </div>
+                <div class='item'>
+                    <img src="./img/onion.jpg" alt="" id="onion">
+                    <div class="title">Лук</div>
+
+                </div>
+            </div>
+            <div class="title_categories">Соусы</div>
+            <div class="topping categories">
+
+                <div class='item'>
+                    <img src="./img/alfredo.jpg" alt="" id="alfredo">
+                    <div class="title">Соус Альфредо</div>
+
+                </div>
+                <div class='item'>
+                    <img src="./img/1.png" alt="" id="barbeque">
+                    <div class="title">Соус Барбекю</div>
+
+                </div>
+                <div class='item'>
+                    <img src="./img/garlic.png" alt="" id="garlic">
+                    <div class="title">Соус Чесночный</div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <main></main>
+       
+        <div class="user_data_title">Ваши контатные данные и цена пиццы</div>
+        <form action="mailto:omgdoni@gmail.com"  method="post" enctype="text/plain" name='myform'>
+            <label for="price">Цена</label><input type="text" name="price" value="0 грн" id="price" disabled='disabled'>
+            <label for="number">Номер телефона</label> <div class="error" id='error_number'>Проверьте номер телефона, он должен быть в формате +380ХХХХХХХХХ</div><input type="text"  id='number' name="number" placeholder="введите ваш номер телефона"  required>
+            <label for="mail">Email</label> <div class="error" id='error_mail'>Проверьте имейл, пример правильного емайла example@example.com</div><input type="text" value="" id="mail" name="mail" placeholder="введите ваш имейл"  required>
+            <label for="firstName">Имя</label> <div class="error" id='error_firstName'>Проверьте  имя</div><input type="text" value="" required id="firstName" placeholder="введите ваше имя" name='firstName'  required>
+            <label for="LastName">Фамилия</label> <div class="error" id='error_lastName'>Проверьте фамилию</div><input type="text" value="" id="lastName" placeholder="введите вашу фамилию" name='lastName' required>
+            <input type="submit" value="Заказать пиццу" id='sender'>
+        </form>
+        <div id="advertisement">
+           Хотите скидку 30%?
+           <button type="submit"  >Да</button>
+        </div>
+</body>
+
+</html>

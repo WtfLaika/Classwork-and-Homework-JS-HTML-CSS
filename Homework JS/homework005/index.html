@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* Создать объект "Документ", в котором определить свойства "Заголовок,тело,футер,дата" 
+        Создать в объекте вложенный объект - "Приложение".
+        Создать в объекте "Приложение", вложенные объекты, "Заголовок,тело,футер,дата*.
+        Создать методы для заполнения и отображения документа.*/
+        const headerName = prompt('Введите названия заголовка',"Пример")
+        const bodyName = prompt('Введите текст',"Пример");
+        const footerName = prompt('Введите комментарий',"Пример");
+        const dataName = prompt('Введите данные',"Пример");
+        let counter = 0;
+
+        const document1 = {
+            header: "",
+            body: "",
+            footer: "",
+            data: "",
+        };
+
+        document1.application = new Object();
+        document1.application.header = new Object();
+        document1.application.body = new Object();
+        document1.application.footer = new Object();
+        document1.application.data = new Object();
+
+        document1.fill = function (input) {
+            for (let key in input) {
+                if (counter == 0) {
+                    input[key] = headerName;
+                } else if (counter == 1) {
+                    input[key] = bodyName;
+                }
+                else if (counter == 2) {
+                    input[key] = footerName;
+                }
+                else if (counter == 3) {
+                    input[key] = dataName;
+                }
+                else {
+                    input[key] = 'Ошибка';
+                }
+                counter++;
+            }
+        };
+        document1.show = function (input) {
+                document.write(`${input} </br>`)
+        }
+        
+
+
+        document1.fill(document1.application);
+        document1.show(document1.application.header);
+    </script>
+</body>
+
+</html>

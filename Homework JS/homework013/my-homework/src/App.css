@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+  font-family: 'Roboto', sans-serif;
+}
+
+main{
+  padding-top: 55px;
+  background-color: #f5f6f7;
+  padding-bottom: 90px;
+}
+.text_title{
+  margin: 0 auto;
+  letter-spacing: 0.2rem;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text{
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4rem;
+  width: 80%;
+  letter-spacing: 0.1rem;
+}
+.first_text{
+  display: block;
+  margin-bottom: 35px;
+  
+}
+.backgound{
+  margin: 0 auto;
+  height: 790px;
+  
+  background-image: url('./components/img/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-btn{
+  display: block;
+  margin: 40px auto 0px auto;
+  padding: 20px 45px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #16a085;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.2rem;
+}
+
+.copyright{
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 65%;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width:1024px){
+  .copyright{
+    padding-left: 50%;
+  }
+  .backgound{
+    height: 500px;
+}
+
+}
+@media  screen and (max-width:769px) {
+  .copyright{
+    padding-left: 39%;
+  }
+  
+}
+
+@media screen and (max-width:415px){
+  .copyright{
+    padding-left:0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  html{
+    font-size: 12px;
+  }
+}
+
+

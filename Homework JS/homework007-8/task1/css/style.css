@@ -1,0 +1,44 @@
+.wrapper {
+    width:1200px;
+    margin: 0 auto;
+    
+}
+
+.container{
+    overflow: hidden;
+    background-color: yellow;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid blueviolet;
+    
+}
+.slider-track{
+    display: flex;
+    justify-content:center;
+    transition: 2s;
+    position: relative;
+    left:500px;
+}
+.btn-container{
+    justify-content: center;
+    position: relative;
+   
+    top:-75px;
+
+}
+
+.slider-track > img{
+    height: 150px;
+    min-width: 200px;
+}
+
+#next{
+    position: relative;
+    left:52.5%;
+}
+#previous{
+    position: relative;
+    left: 36.5%;
+}

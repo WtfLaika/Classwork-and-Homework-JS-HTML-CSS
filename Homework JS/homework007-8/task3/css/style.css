@@ -1,0 +1,46 @@
+.container{
+    background: gray linear-gradient(45deg,#EECFBA,#C5DDE8);
+    margin: 0 auto;
+    width: 200px;
+}
+
+#flag-pict{
+    height: 30px;;
+    width: 30px;
+}
+.screen-flags,.screen-time{
+    display: flex;
+}
+.time,.flags{
+    align-self: center;
+}
+
+#time-pict{
+    height: 30px;
+    width: 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container_btn{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container_btn > input{
+    width: 11%;
+    height: 20px;
+    margin: 0.5px;
+}
+
+#screen_cell{
+    margin-top: 10px;
+    margin-left: 15px;
+   
+    }

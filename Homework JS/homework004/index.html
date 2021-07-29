@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /* Задача №1 */
+
+        function map(fn, array) {
+
+            return document.write(fn(array));
+        }
+
+        map(function (array) {
+
+            let newArray = [];
+
+            for (let i = 0; i < array.length; i++) {
+
+                newArray[i] = array[i] ** 2;
+
+            }
+
+            return newArray;
+
+        }, [1, 2, 3, 4, 5, 6, 7])
+
+
+
+        /* Задача №2 */
+
+        /* 1-ый способ */
+
+        let checkAge1 = (age) => {
+
+            return (age > 18) ? true : confirm('Родители разрешили?');
+
+        }
+
+        checkAge1(19);
+
+        /* 2-ой способ */
+
+        let checkAge2 = (age) => {
+
+            return (age > 18) || confirm('Родители разрешили?');
+
+        }
+
+        checkAge2(17);
+    </script>
+
+</body>
+
+</html>

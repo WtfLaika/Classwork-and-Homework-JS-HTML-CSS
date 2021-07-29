@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* Задание №1
+        Разработайте функцию-конструктор, которая будет создавать объект
+        Human(человек). Создайте массив объектов и реализуйте функцию, 
+        которая будет сортировать элементы массива по значению свойства 
+        Age по возрастанию или по убыванию.
+        */
+
+
+
+        function Human() {
+            /*Метод сортировки по убыванию*/
+            Human.prototype.sort = function (...obj) {
+                let result = obj.sort((a, b) => a.age - b.age);
+                return result;
+            }
+
+            Human.prototype.read = function () {
+                this.firstName = prompt('Введите ваше имя');
+                this.lastName = prompt('Введите вашу фамилию');
+                this.age = Number(prompt('Введите ваш возраст'));
+            }
+        }
+
+
+        const vasya = new Human();
+        vasya.read();
+        const andrey = new Human();
+        andrey.read();
+        const ilya = new Human();
+        ilya.read();
+
+
+        const allPep = new Human();
+        console.log(allPep.sort(vasya, andrey, ilya));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color:#354657;
+}
+
+.conteiner {
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+.title > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #354657;
+  padding-bottom: 18px;
+  border-bottom: 1px #354657 solid;
+}
+
+.title > p:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #354657;
+}
+
+select {
+  font-weight: 400;
+  margin-left: 20px;
+  padding-left: 8px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #f2f2f2;
+}
+
+select > option {
+  color: #354657;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.catalog {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.catalog_card {
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.catalog_card :nth-child(2) {
+  color: #354657;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .catalog {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  nav{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .filter__form{
+    width:100% !important;
+  }
+}
+
+
+.filter{
+  
+}
+
+.filter__title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  width:90%;
+  margin-bottom: 50px;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__form{
+  display: flex;
+  flex-direction: column;
+  width:20%;
+  border: 3px solid #EEE8F8;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.volume, .for__whem{
+  margin-bottom: 50px;
+}
+
+summary{
+  font-weight: bold;
+}
+
+.filter__title>button{
+  font-size: 0.6875rem;
+  font-weight: bold;
+  color:white;
+  background-color:  #946FD3;
+  border: 1px #946FD3 solid;
+  border-radius: 3px;
+}
+
+.filter__title>button>span{
+font-size: 0.4rem;
+position: relative;
+top:-2px;
+}
+

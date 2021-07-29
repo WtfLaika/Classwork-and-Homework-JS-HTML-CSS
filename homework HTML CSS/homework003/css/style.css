@@ -1,0 +1,182 @@
+:root{
+    font-size:18px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 41.67rem;
+    margin: auto auto;
+}
+.header{
+    
+    background-color:#2d7053;
+    height: 13.05rem;
+    margin: 0 auto;
+}
+.header__circle{
+    display: inline-block;
+    padding-left: 2.11rem;
+    padding-top: 2.5rem;
+}
+.header__circle-item {
+    display: inline-block;
+    width: 7.78rem;
+    height: 7.78rem;
+    background-color: white;
+    border-radius: 3.89rem;
+}
+
+.header__title {
+    display: inline-block;
+    padding-left: 3.2rem;
+    font-size: 1.67rem;
+    color:white;
+}
+
+.header__interface{
+    display: inline-block;
+    padding-left: 12.94rem;
+}
+
+.header__interface-item3>img{
+    display: inline-block;
+    margin-bottom: 1.67rem;
+} 
+.header__interface img{
+padding-top: 0.5rem;
+}
+.nextsite {
+    height: 25.94rem;
+    margin: 0 auto;
+    background-image: url('../img/house.png');
+}
+
+.nextsite__background{
+    height: 24.72rem;
+    margin-left: 0.5rem;
+    background-color: rgba(0,0,0,0.3);
+}
+.nextsite__background-buttom > a, .content__link > a {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+    padding: 1.55rem 2.5rem;
+    background-color: #cb9223;
+}
+.nextsite__background-buttom {
+    display: inline-block;
+    padding-left: 10.89rem;
+    padding-top:19.17rem;
+}
+
+.title {
+    margin-top: 4.05rem;
+    margin-left: 2.5rem;
+
+}
+
+.title__foto{
+    width:13.72rem;
+    height: 13.72rem;
+    background-image: url(../img/woman.png);
+    border-top: 0px solid white;
+    border-radius: 6.86rem;
+    float:left;
+
+}
+
+.title__name{
+    display: inline-block;
+    width: 41%;
+    padding-left: 4.17rem;
+    padding-bottom: 2.24rem;
+    clear:left;
+    padding-top: 3.33rem;
+
+   
+
+    
+}
+.title__name-fullname{
+    font-size: 2rem;
+    margin-bottom: 1.61rem;
+}
+.title__name-specialty{
+    font-size: 1.33rem;
+}
+
+.content{
+    margin-top: 3.33rem;
+    margin-left: 2.5rem;
+    text-align: left;
+    font-size: 1.33rem;
+}
+.content__text{
+    font-size: 1.33rem;
+    white-space: pre-line;
+    margin-bottom: 2.5rem;
+}
+.content__title {
+    font-size: 2rem;
+    margin-bottom: 2.23rem;
+}
+.content__list>ol>li{
+    list-style-type:none;
+
+}
+.content__list>ol>li::before{
+content: '-причина номер ';
+}
+.content__list>ol{
+    padding: 0;
+    margin: 0;
+}
+
+.content__link{
+    margin-top: 2.5rem;
+    margin-left: 9.67rem;
+    margin-bottom: 2.78rem;
+}
+.foot{
+    height:8.5rem;
+    background-color: #888888;
+    margin: 0 auto;
+    color:white;
+    text-align: left;
+}
+
+.foot__circle{
+    width: 5.33rem;
+    height: 5.33rem;
+    border: 0px solid white;
+    border-radius: 2.67rem;
+    background-color: white;
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: 1.56rem;
+    display: inline-block;
+}
+.foot__adress{
+    display: inline-block;
+    margin-left: 17.05rem;
+    margin-top: 5.67rem;    
+}
+.foot__contacts{
+    display: inline-block;
+    position: absolute;
+    padding-left:2.11rem;
+    padding-top: 2.87rem;
+}
+
+.foot__contacts-number{
+    text-align: right;
+    padding-bottom: 1.5rem;
+}
+.foot__contacts a{
+    text-decoration: none;
+    color:white;
+}
+
+
+

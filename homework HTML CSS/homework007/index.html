@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header__title">
+            Оформление заказа
+        </div>
+        <div class="header__line"></div>
+
+    </header>
+
+    <main>
+
+
+        <section class='main__header'>
+            <form action="" class="registration">
+                <div class="main__registration-title title">Войти или зарегистрироваться</div>
+                <p>
+                    <input type="radio" name="logon" id="logon" class='radio'>
+                    <label for="logon" class='label_log'>Войти</label>
+                    <input type="radio" name="logon" id="registraition" class='radio'>
+                    <label for="registraition">Зарегистрироваться</label>
+                </p>
+            </form>
+
+            <form action="" class='delivery'>
+                <div class="main__delivery-title title">Способ доставки</div>
+                <p>
+                    <input type="radio" name="delivery_type" id="delivery_type1" class='radio'>
+                    <label for="delivery_type1">Способ доставки</label>
+                    <input type="radio" name="delivery_type" id="delivery_type2" class='radio'>
+                    <label for="delivery_type2">Способ доставки</label>
+                    <input type="radio" name="delivery_type" id="delivery_type3" class='radio'>
+                    <label for="delivery_type3">Способ доставки</label>
+                </p>
+            </form>
+        </section>
+
+        <section class="capital">
+            <form action="" class='user_data_and_delivery_data'>
+                <div class="privat-title title">Личные данные</div>
+                <p><label for="user__name">Ваше имя</label>
+                    <input type="text" name="user__name" id="user__name" placeholder='Ваше имя'>
+                </p>
+                <p><label for="user__lastname">Ваша фамилия</label><input type="text" name="user__lastname"
+                        id="user__lastname" placeholder='Ваше фамилия'></p>
+                <p><label for="email">Электронный адрес</label><input type="email" placeholder="Электронный адрес"></p>
+                <p><label for="telnumber">Мобильный номер</label><input type="tel" placeholder='Мобильный номер'></p>
+                <p><label for="new__telnumber">Дополнительный контакт</label><input type="text"
+                        placeholder="Мобильный номер"></p>
+                <div class="delivery__data-title title">Данные о доставке</div>
+                <p><label for="country">Страна</label><input type="text" placeholder="Страна"></p>
+                <p><label for="city">Город</label><input type="text" placeholder="Город"></p>
+                <p class='last__delivery'><label for="index">Индекс</label><input type="text" placeholder="Индекс"></p>
+            </form>
+            <form action="" class="payment_and_basket">
+                <div class="payment__type">
+                    <div class="payment__type-title title">Способ оплаты</div>
+                    <input type="radio" name="payment__type-item" id="payment__type-item1" class='radio'><label
+                        for="payment__type-item1">Способ оплаты</label><input type="radio" name="payment__type-item"
+                        id="payment__type-item2" class='radio'><label for="payment__type-item2">Способ
+                        оплаты</label><input type="radio" name="payment__type-item" id="payment__type-item3"
+                        class='radio'><label for="payment__type-item3">Способ оплаты</label>
+                </div>
+
+                <section class="basket">
+                    <div class="basket__title title">Ваша корзина</div>
+                    <table class="basket__table">
+                        <thead>
+                            <tr class="basket__table__header">
+                                <td class="basket__table__header-item">Фото</td>
+                                <td class="basket__table__header-item">товар</td>
+                                <td class="basket__table__header-item">Количество</td>
+                                <td class="basket__table__header-item center ">цена</td>
+                                <td class="empty"></td>
+                                <td class="basket__table__header-item ">Итого</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="basket__table__product">
+                                <td class="basket__table__product-item foto"><img src="./img/image 18.png"
+                                        alt="product__foto" class="product__foto"> </td>
+                                <td class="basket__table__product-item">Название товара</td>
+                                <td class="basket__table__product-item number_of_product"><input type="number"
+                                        name="quantity" id="quantity" max="1000" min="1" value="1">
+                                    <button><img src="./img/reset.png" alt="reset"></button>
+                                    <button><img src="./img/close.png" alt="close"></button>
+                                </td>
+                                <td class="basket__table__product-item myprice">10 23, 58 RUB</td>
+                                <td class="empty"></td>
+
+                                <td class="basket__table__product-item table__subtitles total">100 023, 58 RUB</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table__titles">стоимость товара:</td>
+                                <td class="empty "></td>
+                                <td class="table__subtitles ">100 523, 58 RUB</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table__titles delivery_background">Доставка:</td>
+                                <td class="empty delivery_background"></td>
+                                <td class="table__subtitles delivery_background">100 RUB</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table__titles">ИТОГО:</td>
+                                <td class="empty"></td>
+                                <td class="table__subtitles">100 623, 58 RUB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+
+                <section class="comment">
+                    <div class="comment__title title">Способ оплаты</div>
+                <div class="comment__subtitle">Дополнительные комментарии</div>
+                <form action="" class='comment__area'>
+                    <textarea name="comment__area-box" id="comment__area-box" placeholder=" Дополнителньые комментарии к заказу"></textarea>
+                </form>
+                <form action="" class="data__processing">
+                    <input type="checkbox" name="data__processing-item" id="data__processing-item" class='checkbox'>
+                    <label for="data processing-item" class="data__processing-item">Согласие на обработку личных данных</label>
+                </form>
+                <button class='button__payment'>Перейти к оплате</button>
+
+                </section>
+            </form>
+
+
+        </section>
+    </main>
+</body>
+
+</html>

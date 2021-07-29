@@ -1,0 +1,148 @@
+#slider-track > img{
+    width: 400px;
+    height: 200px;
+    position: relative;
+ 
+}
+
+
+#slider-track{
+    display: flex;
+    position: relative;
+    left: 0px;
+}
+#slider_container{
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    border: indigo solid 1px;
+    overflow: hidden;
+}
+#wrapper{
+    width: 1200px;
+    margin-left: 15%;
+}
+
+#btn_left,#btn_right{
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: blue;
+    position: relative
+}
+
+#btn_left{
+    top: -119px;
+    left: -4px;
+}
+#btn_right{
+    top:-119px;
+    left:319px;
+}
+.user_pizza_container,.container_ingredients{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    
+}
+.user_pizza_container{
+    background-image: url('../img/pizza_back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main{
+    display: flex;
+}
+.container_title{
+    text-align: center;
+    font-size: 25px;
+    color:blue;
+    font-weight: bold;
+}
+
+.user_pizza_container img, .container_ingredients img{
+    height: 65px;
+    width: 65px;
+
+}
+
+#size_big{
+    height: 90px;
+    width: 90px;
+}
+.categories{
+    display: flex;
+    
+}
+.title_categories{
+    font-size: 20px;
+    font-weight: bold;
+}
+#size_small{
+    align-self: flex-end ;
+}
+.item {
+    margin:5px;
+}
+
+.delete{
+    position: relative;
+  
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px black;
+    display: none;
+}
+
+
+#pizza_constructor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+#price{
+    color: purple;
+    font-size: 20px;
+}
+
+.user_data_title{
+    width: 40%;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 25%;
+}
+
+
+.error{
+    color: red;
+    font-size: 16px;
+    height: 20px;
+    opacity: 0;
+}
+
+#advertisement{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    height: 200px;
+    align-content: center;
+    background-color: rebeccapurple;
+    justify-content: center;
+}

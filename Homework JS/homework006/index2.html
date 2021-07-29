@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+       Задание №2
+
+       Разработайте функцию-конструктор, которая будет создавать объект
+       Human(человек), добавьте на свое усмотрение свойство и методы в этот
+       объект. Подумайте, какие методы и свойства следует сделать на уровне
+       экземпляра, а какие уровня функции-конструктора.
+       
+       */
+
+        /* Методы лучше создавать на уровне функции-конструктора, что бы на нагружать память.
+        Только закрытые методы можно создавать на уровне экземпляра*/
+        const id = [2333, 4444, 1231, 5342]
+        function Human(userId, privatInf) {
+            this.userId = userId;
+            this.privatInf = privatInf;
+
+            readPrivatInf = function (privatInf) {
+                alert(privatInf);
+            };
+
+            this.giveAccess = function () {
+
+                if (this.login == 'admin') {
+                    readPrivatInf(this.privatInf);
+                }
+                else {
+                    alert('Доступ к приватной информации запрещен');
+                }
+            }
+
+            Human.prototype.read = function () {
+                this.firstName = prompt('Введите ваше имя');
+                this.lastName = prompt('Введите вашу фамилию');
+                this.age = Number(prompt('Введите ваш возраст'));
+                this.login = (prompt('Введите логин'));
+            }
+            Human.prototype.checkAge = function () {
+                if (this.age > 18) {
+                    alert('Доступ разрешен');
+                }
+                else {
+                    alert('Доступ запрещен');
+                }
+            }
+
+            Human.prototype.checkId = function () {
+                if (id.indexOf(this.userId) != -1) {
+                    alert('Это наш клиент');
+                }
+                else {
+                    alert('Это новый клиент');
+                }
+            }
+        }
+
+        let vasya = new Human(4444, 'secret');
+        vasya.read();
+        vasya.checkAge();
+        vasya.checkId();
+        vasya.giveAccess();
+
+    </script>
+</body>
+
+</html>

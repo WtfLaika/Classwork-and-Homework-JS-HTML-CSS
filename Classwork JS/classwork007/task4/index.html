@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+      
+        /*
+        Реализовать функцию фильтра массива по указанному типу данных. 
+        Написать функцию filterBy(), которая будет принимать в себя 2 аргумента.
+        Первый аргумент - массив, который будет содержать в себе любые данные,
+        второй аргумент - тип данных. Функция должна вернуть новый массив, 
+        который будет содержать в себе все данные, которые были переданы в аргумент,
+        за исключением тех, тип которых был передан вторым аргументом. То есть,
+        если передать массив ['he11o', 'world', 23, '23', null], и вторым аргументом передать 'string',
+        то функция вернет массив [23, null]. 
+        */
+
+        function filter(array, typeData) {
+            let result = array.filter((item) => {
+                let data = typeData.toLowerCase();
+                let toString = Object.prototype.toString
+                let x = toString.call(item).replace('[','').replace(']','').replace('object ','').toLowerCase();
+               return x != data;
+            })
+            return result;
+        }
+
+        console.log(filter(['he11o', 'world', 23, '23', null,], 'number'))
+   
+
+    </script>
+</body>
+
+</html>

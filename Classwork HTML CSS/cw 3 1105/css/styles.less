@@ -1,0 +1,108 @@
+@colorText: #354657;
+@mwidht: 1290px;
+@colorBtn: #946fd3;
+
+.btn(@color: @colorBtn, @background-color: white) {
+  width: 205px;
+  height: 55px;
+  color: @colorBtn;
+  border: 2px solid @colorBtn;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.btnHover(@color: white, @background-color: @colorBtn) {
+  background-color: @colorBtn;
+  color: white;
+}
+
+.styleTitleP(@color: @colorText) {
+  font-size: 1.4rem;
+  color: @color;
+  font-weight: bold;
+  font-style: normal;
+  width: 100%;
+  height: 60px;
+}
+
+.styleSubtitleP(@color: @colorText) {
+  font-size: 1rem;
+  color: @color;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  height: 100px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.header__main-container {
+  max-width: @mwidht;
+  margin: 0 auto;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.header__main-container h2 {
+  color: @colorText;
+}
+
+.cards__container {
+  max-width: @mwidht;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 410px;
+  height: 530px;
+  margin-top: 35px;
+  margin-right: 20px;
+  margin-bottom: 65px;
+}
+
+.card :nth-child(2) {
+  .styleTitleP(@colorText);
+}
+
+.card :nth-child(3) {
+  .styleSubtitleP(@colorText);
+}
+
+.card button {
+  .btn(@colorBtn, white);
+}
+.card button:hover {
+  .btnHover(white, @colorBtn);
+}
+
+
+
+/* HOVER */
+/*
+.card:hover {
+  background-color: @colorBtn;
+  &:nth-child(3) {
+    .styleSubtitleP(white);
+  }
+  &:nth-child(2) {
+    .styleTitleP(white);
+  }
+  button {
+    .btn(white, @colorBtn);
+  }
+}
+
+*/

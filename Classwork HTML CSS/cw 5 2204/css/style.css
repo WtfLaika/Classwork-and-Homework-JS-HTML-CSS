@@ -1,0 +1,191 @@
+:root{
+    font-size: 18px;
+}
+
+body{
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    max-width: 106.66rem;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url('../img/Rectangle.png');
+    height: 41.11rem;
+    margin: 0 auto;
+    
+
+}
+
+header > section > .logo {
+    float:left
+}
+header > section > .buttom{
+    float: right;
+    
+}
+
+header > section > .buttom > a{
+display: block;
+padding: 0.61rem 0.83rem;
+    background-color: #F7654A;
+}
+
+header > section {
+    overflow: hidden;
+    width: 57.8%;
+    margin: 0 auto;
+    padding-top: 2.76rem;
+}
+
+header > section > .title{
+    margin: 8.55rem auto 2.39rem;
+    color: white;
+    font-size: 3.56rem;
+    text-transform: uppercase;
+    width:60%;
+    
+}
+
+header > section > .subtitle{
+    color: white;  
+    margin: 0 auto 8.33rem;
+    font-weight: 400;
+}
+
+.information{
+    background-color: #F7F7F7;
+    overflow: hidden;
+    padding: 3.05rem 7.22rem;
+    width: 44.3%;
+    margin: 0 auto;
+}
+
+.information__item > ul {
+padding: 0;
+
+}
+
+.information__item, .information__item > ul > li{
+    list-style: none;
+}
+
+.information__item{
+    width: 25%;
+    float:left;
+}
+
+.information__item:last-child{
+    padding-right: 0;
+}
+.information__item > ul > li:nth-child(1){
+font-size: 4rem;
+color:#F7654A;
+}
+.information__item > ul > li:nth-child(2){
+    font-size:2rem;
+    color: black;
+    text-transform: uppercase;
+}
+.information__item > ul > li:nth-child(3){
+    color:#999999;
+}
+
+main > .title {
+margin: 12.55rem 0 4.17rem;
+text-transform: uppercase;
+font-size: 2rem;
+}
+
+main{
+    width: 57.8%;
+    margin: 0 auto 1.66rem;
+    
+}
+
+main > section {
+    overflow: hidden;
+    text-align: left;
+}
+
+main > section > .block {
+    overflow: hidden;
+    max-width: 31.52%;
+   margin-right: 2.7%;
+    float: left;
+}
+main > section > .block:last-child{
+    margin-right:0;
+
+}
+main > section > .block > .name{
+    padding-top: 0.833rem;
+    font-size: 1.33rem;
+}
+
+main > section > .block > .text{
+    padding-top: 1.11rem;
+    color:#999999;
+    font-size: 0.88rem;
+    line-height: 1.21rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main > section > .block > .dash{
+    padding-top:2.5rem;
+}
+
+footer{
+    margin: 0 auto;
+    background-color: #F7654A;
+}
+
+footer > section{
+    width:58.7%;
+    margin: 0 auto;
+    padding-top: 1.67rem;
+    padding-bottom: 2.22rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > section > .container{
+    text-align: left;
+    color:white;
+    font-weight: 700;
+}
+footer > section > .buttom{
+    align-self: center;
+}
+
+footer > section > .container > .title{
+    font-size: 2.77rem;
+    
+}
+
+footer > section > .container > .subtitle{
+    font-size:1.33rem ;
+}
+
+footer > section > .buttom > a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-size: 0.77rem;
+    display: inline-block;
+    padding: 0.77rem 1.66rem 0.77rem 2.22rem 
+}
+
+footer > section > .buttom{
+    background-color: white;
+    z-index: 1;
+    ;
+}
+
+footer > section > .buttom > a::before{
+    display: inline-block;
+    content:url(../img/.png);
+    padding-right: 0.833rem;
+}

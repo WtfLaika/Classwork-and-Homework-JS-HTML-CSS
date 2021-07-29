@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          /*
+        Реализовать функцию для создания объекта"пользователь". 
+        написать функцию createNewUser, которая будет создавать и возвращать объект newUser- 
+        При вызове функция должна спросить у вызывающего имя и фамилию. Используя данные, введенные пользователем, 
+        создать объект newUser со свойствами firstName и lastName. Добавить в объект newUser() метод getLogin(),
+         который будет возвращать первую букву имени пользователя, соединенную с фамилией пользователя, 
+         все в нижнем регистре (например, Ivan Kravchenko ikravchenko). Создать пользователя с помощью функции createNewUser().
+          Вызвать у пользователя функцию getLogin(). Вывести в консоль результат выполнения функции.
+        */
+
+        class CreateNewUser {
+            constructor() {
+                this.firstName = prompt('Введите ваше имя');
+                this.lastName = prompt('Введите вашу фамилию');
+            }
+            getLogin() {
+                let newName = this.firstName[0].toLowerCase() + this.lastName.toLowerCase();
+                console.log(newName);
+            }
+        }
+
+        const vasya = new CreateNewUser();
+        vasya.getLogin();
+
+    </script>
+</body>
+</html>

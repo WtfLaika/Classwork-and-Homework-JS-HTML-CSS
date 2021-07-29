@@ -1,0 +1,463 @@
+@keyframes transition_text {
+   from{ 
+        display: none;
+    }
+    to{
+        display: block;
+        transform: translateX(316px);
+    }
+    
+    
+}
+@keyframes header_footer{
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(0);
+        }
+}
+@keyframes transition_offer{
+    from{
+        display: none;
+    }
+    to{
+        display: block;
+        transform:translateX(866px)
+    }
+}
+
+
+@keyframes tipps_title{
+    from{
+        display: none;
+    }
+    to{
+        display: block;
+        transform: translateX(41%);
+
+    }
+}
+
+@keyframes tipps_figure{
+    from{
+        display: none;
+    }
+    to{
+        display: block;
+        transform:translateX(340px);
+    }
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    max-width: 1920px;
+    font-family: 'Raleway', sans-serif;
+    color: #354657;
+    margin: 0 auto;
+}
+
+header{
+    margin: 0 auto;
+    margin-top:2.5rem;
+    margin-bottom: 4.4375rem;
+
+}
+.header__nav{
+    width:67%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+
+.navigation__shop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.header__logo{
+    animation:header_footer 2s linear forwards;
+}
+.header__container1{
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    width: 33.5%;
+    justify-content: space-between;
+    margin-right: 16%;
+    animation:header_footer 2s linear forwards;
+}
+
+.header__container2{
+    width: 10.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__navigation  a,.header__container1 a{
+    text-decoration: none;
+    color:#354657;
+}
+
+
+.advertising{
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    color:white;
+    text-align: left;
+    margin-bottom: 70px;
+
+}
+
+.advertising__container{
+    width:31.25%;
+    padding-top: 154px;
+    padding-bottom: 154px;
+    animation: transition_text 2s linear forwards;
+}
+
+.advertising__title{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 56.35px;
+    padding-bottom: 30px;
+}
+
+
+.advertising__subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 40px;
+
+}
+
+.button{
+    background-color: #946FD3;
+    width:206px;
+    border-radius: 50px;
+    height: 54px;
+    border:none;
+    font-size: 1rem;
+    font-weight: 700;
+    border:2px solid #946FD3;
+    transition: all 2s;
+}
+
+.button:hover{
+    background-color: white;
+    color:#946FD3;
+    border:2px solid #946FD3;
+}
+.oil{
+    display: flex;
+    margin-bottom: 106px;
+}
+
+.oil__container{
+    width:31.25%;
+    position: relative;
+    display: inline-block;
+    animation: transition_text 2s linear forwards;
+}
+
+.oil__title{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+
+.oil__subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.oil__subtitle > span{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.oil__foto{
+    display: inline-block;
+    position: relative;
+    box-shadow: 20px 20px #F0E5FF;
+    left:429px;
+}
+
+
+.offer__foto > :nth-child(2){
+    position: relative;
+    left: -114px;
+    top:-40px;
+}
+
+.offer{
+    background-color: #F0E5FF;
+    position: relative;
+    margin-bottom: 109px;
+}
+
+.offer__foto{
+    display: inline-block;
+    position: absolute;
+    left:316px;
+}
+.offer__container{
+ padding-top: 42px;
+ padding-bottom: 18px;
+ width: 30%;
+ display: inline-block;
+ animation: transition_offer 2s linear forwards;
+}
+
+.offer__subtitle{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #946FD3;
+
+}
+.offer__title{
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+
+}
+
+.tipps__container{
+    display: flex;
+    width: 67.5%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.tipps__title{
+    font-size: 2rem;
+    font-weight: 700;
+    animation: tipps_title 2s linear forwards;
+    padding-bottom: 50px;
+}
+.tipps__card{
+    border:none;
+    display: block;
+    width: 31.6% ;
+    margin-left:25px;
+}
+
+.tipps__card:nth-child(1){
+    margin: 0;
+}
+
+.tipps__card:hover {
+    background-color: #946FD3;
+    color: white;
+    transition: all 2s;
+}
+
+.tipps__card:hover .tipps__button{
+    border:2px solid white;
+}
+.tipps__card__title{
+    font-size: 1.5;
+    font-weight: 700;
+}
+
+.card__body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card__text {
+    margin-bottom:30px ;
+}
+
+
+.tipps__card__title, .card__text,.tipps__button{
+    position: relative;
+    left: -340px;
+    animation: tipps_figure 2s linear forwards;
+    transition: all 2s;
+}
+footer{
+    margin-top:70px;
+    padding-top: 1.25rem;
+    border-top: 1px solid #E2E2E2
+}
+
+.footer__navigation{
+    width:67%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__navigation-logo{
+  animation:header_footer 2s linear forwards;  
+}
+.footer__navigation-container1{
+    animation:header_footer 2s linear forwards;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    width: 18.1%;
+    justify-content: space-between;
+    margin-right: 16%;
+    
+
+}
+
+.footer__navigation-container2{
+    width:14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:600px) {
+    @keyframes header_footer{
+        from{
+            transform: translateX(-10%);
+        }
+        to{
+            transform: translateX(0);
+            }
+    }
+    @keyframes transition_text {
+        from{ 
+             display: none;
+         }
+         to{
+             display: block;
+             transform: translateX(30px);
+         }
+         
+         
+     }
+     
+     @keyframes transition_offer{
+         from{
+             display: none;
+         }
+         to{
+             display: block;
+             transform:translateX(20%)
+         }
+     }
+     
+     
+     @keyframes tipps_title{
+         from{
+             display: none;
+         }
+         to{
+             display: block;
+             transform: translateX(15%);
+     
+         }
+     }
+     
+     @keyframes tipps_figure{
+         from{
+             display: none;
+         }
+         to{
+             display: block;
+             transform:translateX(50%);
+         }
+     }
+    :root{
+        font-size: 14px;
+    }
+    .navigation__shop{
+        flex-wrap: wrap !important;
+    }
+    .header__logo{
+        width: 100%;
+    }
+    .header__nav{
+        width: 80%;
+    }
+    .header__container1{
+        margin: 0;
+        width:100%
+    }
+    .header__container2{
+        width: 100%;
+    }
+    .advertising__container{
+        width: 80%;
+    }
+    .oil{
+        flex-direction: column;
+    }
+    .oil__container{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .oil__foto{
+        position: static;
+        box-shadow: none;
+    
+    }
+    .oil__foto>img{
+        width: 80%;
+        box-shadow: 5px 5px #f0e5ff;
+        position: relative;
+        left: 5%;
+    }
+    .offer{
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__foto{
+        transform: scale(0.7); 
+        position:static;  
+        height: 155px;
+        position: relative;  
+        left: 0; 
+        top: -60px;
+    }
+
+    .offer__foto > :nth-child(2){
+        left:185px;
+        top:-344px;
+    }
+    
+    .tipps__container{
+        flex-wrap: wrap;
+    }
+    .tipps__card__title, .card__text, .tipps__button{
+        left: -45%;
+    }
+    .tipps__card{
+        margin: 0;
+    }
+    .footer__navigation{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .footer__navigation-logo{
+        width: 100%;
+    }
+    .footer__navigation-container1{
+        width: 45%;
+        margin: 0;
+    }
+    .footer__navigation-container2{
+        width: 45%;
+    }
+    .footer__navigation > :last-child{
+        width: 100%;
+        transform: scale(0.5);
+        
+    }
+}

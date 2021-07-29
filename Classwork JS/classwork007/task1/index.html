@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           /*
+        «Виселица» — игра на угадывание слов.
+    Один игрок выбирает слово,а второй пытается его отгадать.
+    Например, если первый игрок загадал слово КАПУСТА,
+    изобразит семь «пустых мест», по одному на каждую букву слова:
+    _ _ _ _ _ _ _
+        Второй игрок старается отгадать зто слово, называя буквы. 
+    Каждый раз, когда он угадывает букву,первый игрок заполняет
+    пустоты, вписывая ее везде, где она встречается. например,
+    если второй игрок назвал букву «А», первый должен вписать 
+    все «А» для слова КАПУСТА, вот так:
+    _ А _ _ _ _ А 
+    Если второй игрок назовет букву, которой нет в слове,
+    у него отнимается очко, а первый игрок рисует руку,
+    ногу или другую часть тела человечка. Если первый игрок закончит
+    рисовать человечка раньше, чем второй угадает все буквы,
+    второй игрок проиграл. В нашем варианте «Виселицы» ]avaScript 
+    будет выбирать слово, а игрок-человек — отгадывать буквы.
+    И рисовать человечка наша программа не будет, поскольку мы пока не знаем,
+     как это делается */
+
+     let counter = 0;
+        class Gallows {
+            constructor(userName) {
+                this.name = userName;
+            }
+            startGame() {
+                let word = prompt('Введите слово, которое вы загадали').toUpperCase();
+                this.word = word.split('');
+                let hiddenWord = this.word.map(item => { return item = '_ ' });
+                this.hiddenWord = hiddenWord;
+                this.show(hiddenWord)
+            }
+            show(hiddenWord) {
+                alert(hiddenWord.join(''));
+                if (this.hiddenWord.join('') == this.word.join('') || counter >= 5) {
+                    this.checkLetter();
+                }
+                else this.guess(hiddenWord);
+
+            }
+            guess(hiddenWord) {
+                let userLetter = prompt('Введите букву (на русском языке)', 'а').toUpperCase();
+                this.userLetter = userLetter;
+                if (userLetter.length > 1) {
+                    alert('Введите лишь одну букву.')
+                    this.guess(this.hiddenWord)
+                }
+                else {
+                    this.checkLetter(userLetter)
+                }
+            }
+            checkLetter(userLetter) {
+
+                if (counter < 5 && this.word.indexOf(userLetter) != -1) {
+                    let result = this.word.map((item, index) => {
+
+                        if (item == userLetter) {
+                            this.hiddenWord[index] = userLetter.toUpperCase();
+                        }
+
+                    })
+                    this.show(this.hiddenWord)
+                } else if (this.hiddenWord.join('') == this.word.join('')) {
+                    this.word = '';
+                    this.hiddenWord = '';
+                    this.userLetter = '';
+                    counter = 0;
+                    alert('Поздравляю  вы победили!')
+
+
+                } else if (counter >= 5) {
+                    this.word = '';
+                    this.hiddenWord = '';
+                    this.userLetter = '';
+                    counter = 0;
+                    alert('Вы повешены, вы проиграли!')
+
+                } else {
+                    ++counter
+                    alert(`Неправильно! Осталось ${5 - counter} попыток`)
+                    this.show(this.hiddenWord)
+                }
+            }
+
+
+
+        }
+
+        let vasya = new Gallows('vasya');
+        vasya.startGame();
+
+    </script>
+</body>
+</html>

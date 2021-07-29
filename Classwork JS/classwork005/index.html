@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Создайте объект заработных плат obj.
+        //  Выведите на экран зарплату Пети и Коли. 
+        //Этот объект дан:
+        var obj = { 'Коля': '1000', 'Вася': '500', "Петя": '200' };
+
+        console.log(`Заплата Коли: ${obj['Коля']}  Зарплата Пети: ${obj.Петя}`);
+
+        // Выведите на страницу название валюты цену покупки и цену продажы.
+
+    
+    </script>
+    <table>
+        <tbody>
+            <tr>
+                <td>Название валюты</td>
+                <td>Цена покупки</td>
+                <td>Цена продажы</td>
+            </tr>
+            <script>
+                  const date =   { "date": "11.01.2021", "bank": "PB", "baseCurrency": 980, "baseCurrencyLit": "UAH",
+       "exchangeRate": 
+       [
+           { "baseCurrency": "UAH", "saleRateNB": 22.0522000, "purchaseRateNB": 22.0522000 },
+        { "baseCurrency": "UAH", "currency": "AZN", "saleRateNB": 16.6488000, "purchaseRateNB": 16.6488000 },
+        { "baseCurrency": "UAH", "currency": "BYN", "saleRateNB": 11.0280000, "purchaseRateNB": 11.0280000 }, 
+        { "baseCurrency": "UAH", "currency": "CAD", "saleRateNB": 22.3109000, "purchaseRateNB": 22.3109000 }, 
+        { "baseCurrency": "UAH", "currency": "CHF", "saleRateNB": 32.2608000, "purchaseRateNB": 32.2608000, 
+        "saleRate": 32.8500000, "purchaseRate": 31.0500000 },
+         { "baseCurrency": "UAH", "currency": "CNY", "saleRateNB": 4.3822000, "purchaseRateNB": 4.3822000 }, 
+         { "baseCurrency": "UAH", "currency": "CZK", "saleRateNB": 1.3348000, "purchaseRateNB": 1.3348000, 
+         "saleRate": 1.3300000, "purchaseRate": 1.1200000 }, { "baseCurrency": "UAH", "currency": "DKK", "saleRateNB": 4.6927000,
+          "purchaseRateNB": 4.6927000 }, { "baseCurrency": "UAH", "currency": "EUR", "saleRateNB": 34.9090000,
+           "purchaseRateNB": 34.9090000, "saleRate": 34.6500000, "purchaseRate": 34.0500000 },
+            { "baseCurrency": "UAH", "currency": "GBP", "saleRateNB": 38.5238000, "purchaseRateNB": 38.5238000,
+             "saleRate": 38.9000000, "purchaseRate": 36.9000000 }, { "baseCurrency": "UAH", "currency": "HUF", "saleRateNB": 0.0974530, "purchaseRateNB": 0.0974530 }, { "baseCurrency": "UAH", "currency": "ILS", "saleRateNB": 8.8862000, "purchaseRateNB": 8.8862000 }, { "baseCurrency": "UAH", "currency": "JPY", "saleRateNB": 0.2748400, "purchaseRateNB": 0.2748400 }, { "baseCurrency": "UAH", "currency": "KZT", "saleRateNB": 0.0675120, "purchaseRateNB": 0.0675120 }, { "baseCurrency": "UAH", "currency": "MDL", "saleRateNB": 1.6444000, "purchaseRateNB": 1.6444000 }, { "baseCurrency": "UAH", "currency": "NOK", "saleRateNB": 3.3634000, "purchaseRateNB": 3.3634000 }, { "baseCurrency": "UAH", "currency": "PLZ", "saleRateNB": 7.7274000, "purchaseRateNB": 7.7274000, "saleRate": 7.7000000, "purchaseRate": 7.2000000 }, { "baseCurrency": "UAH", "currency": "RUB", "saleRateNB": 0.3840000, "purchaseRateNB": 0.3840000, "saleRate": 0.4000000, "purchaseRate": 0.3600000 }, { "baseCurrency": "UAH", "currency": "SEK", "saleRateNB": 3.4679000, "purchaseRateNB": 3.4679000 }, { "baseCurrency": "UAH", "currency": "SGD", "saleRateNB": 21.4799000, "purchaseRateNB": 21.4799000 }, { "baseCurrency": "UAH", "currency": "TMT", "saleRateNB": 8.0785000, "purchaseRateNB": 8.0785000 }, { "baseCurrency": "UAH", "currency": "TRY", "saleRateNB": 3.8547000, "purchaseRateNB": 3.8547000 }, { "baseCurrency": "UAH", "currency": "UAH", "saleRateNB": 1.0000000, "purchaseRateNB": 1.0000000 }, { "baseCurrency": "UAH", "currency": "USD", "saleRateNB": 28.2847000, "purchaseRateNB": 28.2847000, "saleRate": 28.4500000, "purchaseRate": 28.0500000 }, { "baseCurrency": "UAH", "currency": "UZS", "saleRateNB": 0.0026988, "purchaseRateNB": 0.0026988 }, { "baseCurrency": "UAH", "currency": "GEL", "saleRateNB": 8.6366000, "purchaseRateNB": 8.6366000 }] }
+date.exchangeRate.forEach(function(item,index,arr){
+    document.write(`<tr><td>${item.currency}</td><td>${item.purchaseRateNB.toFixed(2)}</td><td>${item.saleRateNB.toFixed(2)}</td></tr>`);
+})
+
+            </script>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
